@@ -1,0 +1,534 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1;
+  width: 100%; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?3teuz6");
+  src: url("../fonts/icomoon.eot?3teuz6#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?3teuz6") format("truetype"), url("../fonts/icomoon.woff?3teuz6") format("woff"), url("../fonts/icomoon.svg?3teuz6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-envelope-o:before {
+  content: "\e900"; }
+
+.icon-menu:before {
+  content: "\e901"; }
+
+.icon-link:before {
+  content: "\e9cb"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-linkedin2:before {
+  content: "\eaca"; }
+
+@font-face {
+  font-family: Amethyst;
+  src: url("../fonts/FontsFree-Net-Amethyst-7B9WV.ttf"); }
+
+#wrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+  #wrapper h2 {
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: bold; }
+  #wrapper > div {
+    padding: 10px; }
+  #wrapper a {
+    text-decoration: none; }
+  #wrapper header {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #262b37;
+    text-align: center;
+    z-index: 100;
+    padding: 0 20px; }
+    #wrapper header.fixed {
+      position: fixed;
+      top: 0;
+      height: 50px; }
+    #wrapper header p {
+      display: none;
+      color: #c3c8d6; }
+    #wrapper header ul {
+      display: inline-block; }
+      #wrapper header ul li {
+        display: inline-block;
+        padding: 0; }
+        #wrapper header ul li a {
+          color: #c3c8d6;
+          display: block;
+          padding: 0 20px;
+          text-decoration: none; }
+          #wrapper header ul li a :hover {
+            color: #fff; }
+          #wrapper header ul li a.active {
+            background: #1b1f29;
+            color: #fff; }
+  #wrapper section .container {
+    padding: 50px; }
+  #wrapper #home {
+    width: 100%; }
+    #wrapper #home > div {
+      height: inherit;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
+      #wrapper #home > div .bg {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../images/IMG_4786.JPG) center fixed no-repeat;
+        background-size: cover;
+        -webkit-filter: brightness(0.6);
+        filter: brightness(0.6); }
+      #wrapper #home > div h1 {
+        margin: 0 50px;
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        padding: 30px;
+        color: #fff;
+        border: 1px solid #fff;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 10; }
+  #wrapper #about h2 {
+    color: #F8CD9E; }
+  #wrapper #about > div > div {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #wrapper #about > div > div > div {
+      margin: 20px 0;
+      width: 50%; }
+      #wrapper #about > div > div > div > a {
+        background-color: #262b37;
+        margin-top: 10px;
+        padding: 10px;
+        display: inline-block;
+        color: #c3c8d6;
+        font-size: 14px; }
+    #wrapper #about > div > div h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-weight: bolder; }
+      #wrapper #about > div > div h3 span {
+        font-size: 18px;
+        display: block;
+        padding-top: 5px; }
+    #wrapper #about > div > div h4 {
+      font-size: 20px;
+      padding: 25px 0 5px;
+      font-weight: bold; }
+    #wrapper #about > div > div p {
+      line-height: 22px;
+      font-size: 16px;
+      margin-bottom: 5px; }
+      #wrapper #about > div > div p span {
+        display: block;
+        color: #aaa;
+        line-height: 20px;
+        font-size: 14px; }
+    #wrapper #about > div > div .me {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #wrapper #about > div > div .me img {
+        width: 70%;
+        height: 10%;
+        border-radius: 50%; }
+  #wrapper #skills {
+    background-color: #eee; }
+    #wrapper #skills h2 {
+      color: #FB7D79; }
+    #wrapper #skills > div > div {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      #wrapper #skills > div > div > div {
+        width: 25%;
+        margin-bottom: 25px; }
+        #wrapper #skills > div > div > div p {
+          font-weight: bolder; }
+      #wrapper #skills > div > div .chart {
+        position: relative;
+        display: inline-block;
+        margin: 10px 10px 15px;
+        color: #333;
+        font-size: 18px;
+        text-align: center; }
+        #wrapper #skills > div > div .chart .percent {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          display: block;
+          line-height: 130px;
+          z-index: 2; }
+        #wrapper #skills > div > div .chart .percent:after {
+          content: '%';
+          margin-left: 0.1em;
+          font-size: .8em; }
+  #wrapper #experience {
+    background-color: #F8CD9E; }
+    #wrapper #experience h2 {
+      color: #fff; }
+    #wrapper #experience > div > div {
+      position: relative; }
+      #wrapper #experience > div > div > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-bottom: 20px; }
+        #wrapper #experience > div > div > div:before {
+          content: '';
+          position: absolute;
+          left: 120px;
+          top: 0;
+          bottom: 0;
+          width: 1px;
+          background-color: #fff; }
+        #wrapper #experience > div > div > div:last-child {
+          padding-bottom: 0; }
+        #wrapper #experience > div > div > div .date {
+          padding-right: 30px;
+          text-align: center;
+          line-height: 20px; }
+          #wrapper #experience > div > div > div .date p {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #FB7D79;
+            color: #fff; }
+        #wrapper #experience > div > div > div .detail {
+          margin-left: 20px;
+          background-color: #fff;
+          padding: 20px;
+          width: 100%;
+          position: relative; }
+          #wrapper #experience > div > div > div .detail:before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 40px;
+            border-width: 8px 12px 8px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent #fff; }
+          #wrapper #experience > div > div > div .detail p {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: bolder; }
+          #wrapper #experience > div > div > div .detail span {
+            font-size: 16px;
+            line-height: 22px;
+            color: #747474; }
+          #wrapper #experience > div > div > div .detail ul {
+            margin-top: 10px; }
+            #wrapper #experience > div > div > div .detail ul li {
+              line-height: 18px; }
+  #wrapper #protfolio h2 {
+    color: #FB7D79; }
+  #wrapper #protfolio > div .list {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    #wrapper #protfolio > div .list li {
+      width: 25%;
+      padding: 10px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #wrapper #protfolio > div .list li.active > span, #wrapper #protfolio > div .list li:hover > span {
+        -webkit-filter: brightness(0.2);
+        filter: brightness(0.2); }
+      #wrapper #protfolio > div .list li.active p, #wrapper #protfolio > div .list li:hover p {
+        color: #fff; }
+        #wrapper #protfolio > div .list li.active p span, #wrapper #protfolio > div .list li:hover p span {
+          left: 0; }
+        #wrapper #protfolio > div .list li.active p > i, #wrapper #protfolio > div .list li:hover p > i {
+          right: 0; }
+        #wrapper #protfolio > div .list li.active p a, #wrapper #protfolio > div .list li:hover p a {
+          background-color: #F8CD9E;
+          color: #fff;
+          top: 0;
+          right: 0;
+          padding: 8px 10px; }
+      #wrapper #protfolio > div .list li > span {
+        width: 100%;
+        color: #fff;
+        display: inline-block; }
+      #wrapper #protfolio > div .list li p {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: table;
+        overflow: hidden; }
+        #wrapper #protfolio > div .list li p span {
+          display: block;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+          border-bottom: 1px solid #fff;
+          left: -200px;
+          position: relative;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+        #wrapper #protfolio > div .list li p > i {
+          right: -200px;
+          position: relative;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          font-size: 12px;
+          line-height: 16px;
+          display: block;
+          margin-bottom: 10px; }
+        #wrapper #protfolio > div .list li p a {
+          display: inline-block;
+          position: relative;
+          top: -100px; }
+  #wrapper footer {
+    background-color: #FB7D79;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #wrapper footer ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      #wrapper footer ul li {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        border-radius: 50%; }
+        #wrapper footer ul li i {
+          color: #FB7D79; }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #wrapper section:not(#home) .container {
+    padding: 50px 25px; }
+  #wrapper header {
+    height: auto;
+    padding: 0; }
+    #wrapper header p {
+      cursor: pointer;
+      color: #fff;
+      background-color: #262b37;
+      padding: 0 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      #wrapper header p i {
+        font-size: 22px; }
+      #wrapper header p span {
+        font-family: Amethyst;
+        font-size: 26px; }
+    #wrapper header ul {
+      background-color: #262b37;
+      display: none;
+      padding: 0 15px; }
+      #wrapper header ul li {
+        display: block; }
+  #wrapper #home > div .bg {
+    background-attachment: scroll !important;
+    background-image: url(../images/IMG_4782.JPG);
+    background-position: bottom; }
+  #wrapper #home > div h1 {
+    font-size: 30px; }
+  #wrapper #about > div > div > div {
+    width: 100%; }
+  #wrapper #skills > div > div > div {
+    width: 100%; }
+  #wrapper #experience > div > div > div {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    #wrapper #experience > div > div > div:before {
+      width: 0; }
+    #wrapper #experience > div > div > div .date {
+      width: 100%;
+      padding-right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-bottom: 20px; }
+    #wrapper #experience > div > div > div .detail {
+      margin: 0 0 20px; }
+      #wrapper #experience > div > div > div .detail:before {
+        top: -12px;
+        left: 48%;
+        border-width: 0 8px 12px 8px;
+        border-style: solid;
+        border-color: #fff transparent #fff transparent; }
+  #wrapper #protfolio > div .list li {
+    width: 100%; }
+    #wrapper #protfolio > div .list li > span {
+      width: 80%; }
+    #wrapper #protfolio > div .list li p {
+      width: 190px; } }
